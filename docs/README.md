@@ -1,6 +1,6 @@
-# FPGA Pre-Trade Risk & Order Gateway (Scaffold)
+# FPGA Pre-Trade Risk & Order Gateway
 
-This repository scaffolds an FPGA-based pre-trade risk gateway to sit between a CPU algo and an exchange.
+This is an FPGA-based pre-trade risk gateway to sit between a CPU algo and an exchange.
 
 ```
 Exchange Feed → ITCH Parser (done) → CPU Algo → FPGA Risk Gateway → Exchange
@@ -18,9 +18,3 @@ Exchange Feed → ITCH Parser (done) → CPU Algo → FPGA Risk Gateway → Exch
 - `sim/` — Cocotb testbench skeleton (drivers, scenarios, golden model).
 - `docs/` — README, latency table, diagrams.
 
-## Next Steps
-- Flesh out I/O spec, register map, reason codes.
-- Implement each check as a 1-cycle stage; verify constant-time path.
-- Build cocotb randomized scenarios and CSV logs.
-
-> Scaffold generated on 2025-08-26 14:29:41.
